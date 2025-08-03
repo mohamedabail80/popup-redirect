@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>redirect</title>
+</head>
+<body>
+<script>
+(function(){
+   var uid = '334309', wid = '724645';
+   var s = document.createElement('script');
+   s.src = '//cdn.popcash.net/show.js';
+   document.head.appendChild(s);
+   s.onerror = function(){
+      var s2 = document.createElement('script');
+      s2.src = '//cdn2.popcash.net/show.js';
+      document.head.appendChild(s2);
+   };
+})();
+</script>
+</body>
+</html>
